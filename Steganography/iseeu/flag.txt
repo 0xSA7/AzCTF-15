@@ -1,0 +1,2 @@
+AzCTF{it's_s\!mple_2B_noted}
+AzCTF{it's_s!mple_2B_noted}

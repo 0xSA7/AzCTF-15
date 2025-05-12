@@ -1,0 +1,82 @@
+Here's what you should provide to challengers for this hard reverse engineering challenge:
+
+**1. Challenge Files Package:**
+```
+AzCTF_reverse_challenge/
+├── challenge          # Compiled binary (stripped of symbols)
+├── README.md          # Challenge documentation
+└── hint.txt           # (Optional) Progressive hint system
+```
+
+**2. README.md Contents:**
+```markdown
+# AzCTF: Reverse Engineering Challenge (Hard)
+
+## Challenge Description
+Find the correct username/password combination to unlock the flag. The program uses cryptographic transformations to verify credentials.
+
+**Difficulty**: Hard  
+**Category**: Reverse Engineering  
+**Flag Format**: `AzCTF{...}`
+
+## How to Play
+```bash
+./challenge
+# Enter 8-character username and password when prompted
+```
+
+## Hints (Available Separately)
+1. Level 1: "The verification algorithm uses bitwise operations"
+2. Level 2: "Focus on the transformation between user input and final verification value"
+3. Level 3: "The magic number is 0x6d"
+```
+
+**3. Challenge Binary Preparation:**
+Compile with security mitigations disabled and symbols stripped:
+```bash
+gcc -o challenge -fno-stack-protector -no-pie -s challenge.c
+```
+
+**4. Progressive Hint System:**
+Release these through the CTF platform as time passes:
+1. Initial Hint: "The program uses XOR transformations at multiple levels"
+2. Intermediate Hint: "The final verification value must equal the XOR key used for flag encryption"
+3. Final Hint: "Target verification value: 109 (0x6d in hex)"
+
+**5. Validation Script (For CTF Platform):**
+```python
+#!/bin/python3
+from pwn import *
+
+def validate():
+    p = process('./challenge')
+    p.send(b"\x00"*8)  # Username
+    p.send(b"\xfd" + b"\x00"*7)  # Password
+    return b"AzCTF{" in p.recvall()
+
+if validate():
+    print("Solved!")
+else:
+    print("Keep trying!")
+```
+
+**6. Recommended Challenge Setup:**
+1. Provide only the compiled binary (no source code)
+2. Strip debug symbols to force static analysis
+3. Use CTFd or similar platform with hint system
+4. Add challenge tags: ["reverse", "xor", "crypto"]
+
+**Key Challenge Elements:**
+- Requires static analysis of binary to understand verification logic
+- Needs understanding of XOR chaining operations
+- Involves mathematical reverse engineering of checksum calculation
+- Contains multiple layers of transformation to analyze
+
+**What Participants Should Figure Out:**
+1. Reverse engineer the verification algorithm
+2. Discover the XOR-based flag decryption
+3. Calculate required i2 value (109/0x6d)
+4. Solve equation: Σ(password[i]^username[i] - i*4) = 109
+5. Craft inputs that satisfy the verification equation
+
+This setup creates a proper hard challenge that tests binary analysis skills, understanding of cryptographic transformations, and equation solving abilities.

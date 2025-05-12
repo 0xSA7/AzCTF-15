@@ -1,0 +1,38 @@
+2. Second Challenge: The Hidden Location Challenge
+Objective:
+Discover the hidden location by analyzing an image and extracting metadata.
+
+Solution Steps:
+Starting the Challenge:
+
+Begin by accessing the challenge’s index.html.
+
+Hints:
+
+Initial hint on the page:
+
+"Can you figure out where this street is? Start by analyzing the image closely."
+
+Additional hint:
+
+"Look at the metadata of the image and use any tools you may need."
+
+Image Analysis:
+
+Download the image q.png.
+
+Inspect its metadata using exiftool:
+
+bash
+exiftool q.png
+Result:
+
+Comment: Hidden File: afghanistan.html
+Flag Retrieval:
+
+Visit the hidden file:
+afghanistan.html
+
+The flag displayed is:
+
+flag{afghanistan}
