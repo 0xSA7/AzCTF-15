@@ -1,0 +1,28 @@
+{
+  "employees": [
+    {
+      "name": "Ayman El-Sayed",
+      "email": "ayman.elsayed@halib.org",
+      "password": "Q4Recruitment!",
+      "position": "ORM Manager"
+    },
+    {
+      "name": "Ziad Abd El-Monem",
+      "email": "karim.nassar@halib.org",
+      "password": "WeAreTheBest!",
+      "position": "Web Developer"
+    },
+    {
+      "name": "Mohamed El-Sayed",
+      "email": "mohamed.elsayed@halib.org",
+      "password": "Passw0rd!",
+      "position": "Logistics Manager"
+    },
+    {
+      "name": "Cezar",
+      "email": "cezar@halib.org",
+      "password": "TheMostSecurePassword",
+      "position": "Head of IT"
+    }
+  ]
+}

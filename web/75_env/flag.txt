@@ -1,0 +1,2 @@
+encryptCTF{v1rtualenvs_4re_c00l}
+AzCTF{3n0f_tr0l!in}

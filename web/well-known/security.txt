@@ -1,0 +1,4 @@
+# Security.txt for Halib Al-Khair
+
+Contact: mailto:security@halibalkhair.com
+Flag: AzCTF{milk_in_plain_sight}

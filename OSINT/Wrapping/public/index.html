@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HexaCore Solutions - Careers</title>
+</head>
+
+<body>
+  <h1>Welcome to HexaCore Solutions</h1>
+  <p>We're hiring! Check our internal portal for more info.</p>
+  <!-- Hint خفي -->
+  <!-- Try exploring: careers.internal.hexacore.htb -->
+  <script>
+    async function login() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const res = await fetch('/data/employees.json');
+      const data = await res.json();
+      console.log(data);
+
+      const found = data.employees.find(emp => emp.email === email && emp.password === password);
+      if (found) {
+        window.location.href = "/dashboard.html";
+      } else {
+        document.getElementById('message').textContent = "Invalid credentials.";
+      }
+    }
+  </script>
+</body>
+
+</html>

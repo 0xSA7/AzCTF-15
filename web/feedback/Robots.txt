@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /cookie_crumble.php
+Disallow: /brownie_bites.php
+Disallow: /milkshake_mist.php
+Disallow: /chocolate_chip.php
+Allow: /chocolate_fudge.php
