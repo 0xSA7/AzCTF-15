@@ -65,10 +65,10 @@ Cryptography/What is my type/ ├── challenge.c ├── challenge # Compil
 AzCTF is created and maintained by a passionate group of cybersecurity enthusiasts, educators, and CTF players. Our goal is to provide high-quality, educational challenges for learners of all levels.
 
 **Core Contributors:**
-- [0xSA7](linkedin.com/in/saleh-diaa-ahmed) -- Founder & Challenge Author
-- [Hizat](linkedin.com/in/ibrahim-ezzat-4b21a8234) -- Deployment & Support
-- [GERR4Y](linkedin.com/in/%D8%A2%D9%8A%D8%A9-%D8%A3%D9%8A%D9%85%D9%86-gerr4y-38a76b28a/) -- OSINT Challenge Author
-- [Basmala Osama](linkedin.com/in/basmala-osama) – Web Challenge Author
+- [0xSA7](https://www.linkedin.com/in/saleh-diaa-ahmed) -- Founder & Challenge Author
+- [Hizat](https://www.linkedin.com/in/ibrahim-ezzat-4b21a8234) -- Deployment & Support
+- [GERR4Y](https://www.linkedin.com/in/%D8%A2%D9%8A%D8%A9-%D8%A3%D9%8A%D9%85%D9%86-gerr4y-38a76b28a/) -- OSINT Challenge Author
+- [Basmala Osama](https://www.linkedin.com/in/basmala-osama) – Web Challenge Author
 
 We welcome new contributors! If you'd like to join the team or help improve the repository, check out [0xSA7](linkedin.com/in/saleh-diaa-ahmed).
 
