@@ -48,9 +48,14 @@ Cryptography/ Forensics/ Network/ OSINT/ Steganography/ Web/ tests/
 ## 📝 Example Challenge Structure
 
 Cryptography/ Forensics/ Network/ OSINT/ Steganography/ Web/
-
-Cryptography/What is my type/ ├── challenge.c ├── challenge # Compiled binary (if applicable) ├── README.md # Challenge description and hints ├── solution.py # (Optional) Solution script ├── temp.txt # (Optional) Notes/hints
-
+```text
+Cryptography/What is my type/
+                            ├── challenge.c
+                            ├── challenge # Compiled binary (if applicable)
+                            ├── README.md # Challenge description and hints
+                            ├── solution.py # (Optional) Solution script
+                            ├── temp.txt # (Optional) Notes/hints
+```
 ---
 
 ## 💡 Hints & Solutions
@@ -70,7 +75,7 @@ AzCTF is created and maintained by a passionate group of cybersecurity enthusias
 - [GERR4Y](https://www.linkedin.com/in/%D8%A2%D9%8A%D8%A9-%D8%A3%D9%8A%D9%85%D9%86-gerr4y-38a76b28a/) -- OSINT Challenge Author
 - [Basmala Osama](https://www.linkedin.com/in/basmala-osama) – Web Challenge Author
 
-We welcome new contributors! If you'd like to join the team or help improve the repository, check out [0xSA7](linkedin.com/in/saleh-diaa-ahmed).
+We welcome new contributors! If you'd like to join the team or help improve the repository, check out [0xSA7](https://www.linkedin.com/in/saleh-diaa-ahmed).
 
 ---
 
